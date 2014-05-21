@@ -25,9 +25,10 @@
                         console.log('My links is' + response.link);
                         console.log('My Username is' + response.username);
                         console.log('My ID is' + response.id);
-                        document.getElementByTagName('body').innerHtml;
-                        document.write('My Username is' + response.username);
-                        document.write('My ID is' + response.id); 
+                        $('body').append(response);
+			$('body').append('My links is' + response.link);
+			$('body').append('My Username is' + response.username);
+			$('body').append('My ID is' + response.id);
                     });
 
 
